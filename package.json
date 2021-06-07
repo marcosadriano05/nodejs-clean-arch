@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,15 @@
     "url": "https://github.com/marcosadriano05/nodejs-clean-arch/issues"
   },
   "homepage": "https://github.com/marcosadriano05/nodejs-clean-arch#readme",
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
-    "standard": "^16.0.3"
+    "lint-staged": "^11.0.0",
+    "standard": "^16.0.3",
+    "husky": "^6.0.0"
   }
 }
