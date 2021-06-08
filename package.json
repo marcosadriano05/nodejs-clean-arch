@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:staged": "jest",
     "prepare": "husky install"
   },
   "repository": {
@@ -18,6 +19,9 @@
     "url": "https://github.com/marcosadriano05/nodejs-clean-arch/issues"
   },
   "homepage": "https://github.com/marcosadriano05/nodejs-clean-arch#readme",
+  "standard": {
+    "env": ["jest"]
+  },
   "devDependencies": {
     "husky": "^6.0.0",
     "jest": "^27.0.4",

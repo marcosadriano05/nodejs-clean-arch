@@ -1,6 +1,7 @@
 {
   "*.js": [
     "standard --fix",
+    "npm rum test:staged",
     "git add"
   ]
 }
